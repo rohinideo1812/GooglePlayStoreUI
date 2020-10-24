@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="Task" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ICR-XB-UTA"/>
+                <outlet property="searchTxtField" destination="i3U-oi-Na7" id="Cia-Fe-vaa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joq-y6-au3">
+                    <rect key="frame" x="8" y="8" width="398" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jww-xv-Q5d">
+                            <rect key="frame" x="8" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Ccp-93-raF"/>
+                                <constraint firstAttribute="width" constant="30" id="EW5-bZ-F8H"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="text.justify" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrY-U9-5SH">
+                            <rect key="frame" x="360" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="7Sh-0I-0pW"/>
+                                <constraint firstAttribute="width" constant="30" id="Mmc-xd-QP1"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="circle.fill" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBf-DL-O2d">
+                            <rect key="frame" x="322" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="ECA-7a-Y67"/>
+                                <constraint firstAttribute="height" constant="30" id="hnz-LZ-aBo"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="mic" catalog="system"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for apps &amp; games" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3U-oi-Na7">
+                            <rect key="frame" x="46" y="8" width="268" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="HBf-DL-O2d" firstAttribute="centerY" secondItem="i3U-oi-Na7" secondAttribute="centerY" id="0CH-Z5-gIp"/>
+                        <constraint firstItem="CrY-U9-5SH" firstAttribute="leading" secondItem="HBf-DL-O2d" secondAttribute="trailing" constant="8" id="Leb-NJ-ji4"/>
+                        <constraint firstItem="i3U-oi-Na7" firstAttribute="leading" secondItem="Jww-xv-Q5d" secondAttribute="trailing" constant="8" id="Qah-wQ-ZyV"/>
+                        <constraint firstItem="i3U-oi-Na7" firstAttribute="top" secondItem="joq-y6-au3" secondAttribute="top" constant="8" id="UsO-so-zA4"/>
+                        <constraint firstAttribute="bottom" secondItem="i3U-oi-Na7" secondAttribute="bottom" constant="7" id="Yxu-8u-Rha"/>
+                        <constraint firstItem="Jww-xv-Q5d" firstAttribute="centerY" secondItem="i3U-oi-Na7" secondAttribute="centerY" id="Z5x-Xh-VYe"/>
+                        <constraint firstItem="Jww-xv-Q5d" firstAttribute="leading" secondItem="joq-y6-au3" secondAttribute="leading" constant="8" id="dC1-72-UV4"/>
+                        <constraint firstAttribute="trailing" secondItem="CrY-U9-5SH" secondAttribute="trailing" constant="8" id="mn1-iv-O1u"/>
+                        <constraint firstItem="HBf-DL-O2d" firstAttribute="leading" secondItem="i3U-oi-Na7" secondAttribute="trailing" constant="8" id="rVs-7I-3KA"/>
+                        <constraint firstItem="CrY-U9-5SH" firstAttribute="centerY" secondItem="i3U-oi-Na7" secondAttribute="centerY" id="tHH-t4-8ri"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="joq-y6-au3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="INP-1U-1pr"/>
+                <constraint firstItem="joq-y6-au3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="NBe-nf-VTt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="joq-y6-au3" secondAttribute="bottom" constant="8" id="ceq-2B-en0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="joq-y6-au3" secondAttribute="trailing" constant="8" id="hJb-1u-WH2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="108.69565217391305" y="-187.83482142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="mic" catalog="system" width="108" height="128"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
+    </resources>
+</document>
